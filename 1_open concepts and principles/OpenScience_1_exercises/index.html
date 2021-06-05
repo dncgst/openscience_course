@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Science</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Open Science">
+  <meta name="author" content="Dr. Domenico Giusti">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/github.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    
+  <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/UT_WBMW_Rot_RGB_01.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/UT_WBMW_Rot_RGB_01.png">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>Open Science</h1>
+    <h2>Basic principles and best practices</h2>
+    <p>Dr. Domenico Giusti<br/>Paläoanthropologie, Senckenberg Centre for Human Evolution and Palaeoenvironment</p>
+  </hgroup>
+  
+  <article></article>  
+      
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png'>
+    </a>
+  </footer>
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <article data-timings="">
+    <!-- Markdown emphasis workaround (https://github.com/ramnathv/slidify/issues/224) -->
+
+<style>
+em {
+  font-style: italic
+}
+</style>
+
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
+
+<!-- Icebreaker
+      In order to energize audience members and help them get to know the trainers and each other, many training sessions begin with an ice-breaker exercise. Creating a warm, welcoming, friendly and positive learning environment should enable attendees to better participate and learn, and help them to feel more comfortable.
+-->
+
+<h2>Week 1: Open Concepts and Principles</h2>
+
+<h3>Outline</h3>
+
+<ul>
+<li>Introduction to some of the best tools for doing Reproducible Research
+
+<ul>
+<li>R &amp; RStudio</li>
+<li>(R)Markdown</li>
+<li>GitHub</li>
+<li>Zenodo, OSF</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Reproducible research</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="assets/img/ReproducibleJourney.jpg" width=650px class='center'></img></p>
+
+<p>This image (and the previous one) was created by Scriberia for <a href="https://the-turing-way.netlify.app/welcome.html">The Turing Way</a> community and is used under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY licence</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>The Open Scientist&#39;s Toolbox</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li><a href="https://cran.r-project.org/">R</a> + <a href="https://www.rstudio.com/">RStudio</a></li>
+<li><a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">RMarkdown</a></li>
+<li><a href="https://git-scm.com/">Git</a> + <a href="https://github.com/">GitHub</a></li>
+<li><a href="https://zenodo.org/">Zenodo</a>, <a href="https://osf.io/">OSF</a></li>
+</ul>
+
+<!-- Introduction to R & RStudio -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-4" style="background:;">
+  
+  <hgroup>
+    <h2>Introduction to R &amp; RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Setup</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>If you don&#39;t have it already, now might be a good time to install R and RStudio to get started.</p>
+
+<p>Download and install the <a href="https://cran.rstudio.com/">R base system</a> and <a href="http://www.rstudio.com/products/rstudio/download/">RStudio</a>. Both are needed. Installing RStudio will not automatically install R.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  
+  <hgroup>
+    <h2>R</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Programming language</li>
+<li>Started as a statistics and data analysis environment</li>
+<li>But can also build websites, run simulations, and lots of other things</li>
+<li>R is what runs all of the code we will write this semester</li>
+<li>Separate from RStudio</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  
+  <hgroup>
+    <h2>RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>IDE - Integrated Development Environment</li>
+<li>Makes developing code in R easier</li>
+<li>It includes a number of different aspects of code development in one place
+
+<ul>
+<li>Console - where R is actually running. Can work in here “interactively”</li>
+<li>Text editor - writing dynamic documents (text ~ code) .R .Rmd .txt ...</li>
+<li>Environment - provides information on the variables that currently exist and their values</li>
+<li>History - history of the commands you’ve run</li>
+<li>Project management - create, delete, and rename files &amp; folders</li>
+<li>Plots - graphic device</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  
+  <hgroup>
+    <h2>RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src='assets/img/Screenshot from 2021-04-29 16-11-34.png' width=900px class='center'></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  
+  <hgroup>
+    <h2>R packages</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>It is possible to add functions to R by installing packages. At the time of writing, the <a href="https://cran.r-project.org/">CRAN</a> package repository features 17485 available packages.</p>
+
+<p>CRAN Task Views allow you to browse packages by topic and provide tools to automatically install all packages for special areas of interest.</p>
+
+<ul>
+<li><a href="https://cran.r-project.org/web/views/ReproducibleResearch.html">CRAN Task View: Reproducible Research</a></li>
+<li><a href="https://github.com/benmarwick/ctv-archaeology">CRAN Task View: Archaeological Science</a></li>
+<li><a href="https://cran.r-project.org/web/views/Spatial.html">CRAN Task View: Analysis of Spatial Data</a></li>
+<li><a href="https://cran.r-project.org/web/views/Genetics.html">CRAN Task View: Statistical Genetics</a></li>
+<li><a href="https://cran.r-project.org/web/views/NaturalLanguageProcessing.html">CRAN Task View: Natural Language Processing</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  
+  <hgroup>
+    <h2>R packages</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>R and RStudio have functionality for managing packages.</p>
+
+<p>From the console, you can install packages by typing:</p>
+
+<pre><code class="r">install.packages(&quot;packagename&quot;)
+</code></pre>
+
+<p>You can make a package available for use with:</p>
+
+<pre><code class="r">library(&quot;packagename&quot;)
+</code></pre>
+
+<p>Packages can also be confortably viewed, loaded, and detached in the Packages tab of RStudio.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  
+  <hgroup>
+    <h2>Assignments</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>&quot;The <a href="https://swirlstats.com/students.html">swirl</a> R package makes it fun and easy to learn R programming and data science. If you are new to R, have no fear.&quot;</p>
+
+<pre><code class="r"># this is a comment
+install.packages(&quot;swirl&quot;) # install the package
+library(&quot;swirl&quot;) # load the package
+swirl() # start swirl
+</code></pre>
+
+<p>The first time you start swirl, you&#39;ll be prompted to install a course. Select 5: Don&#39;t install anything for me. I&#39;ll do it myself. A <a href="https://github.com/swirldev/swirl_courses">GitHub</a> collection of interactive courses will open. Back to the console, type:</p>
+
+<pre><code class="r">install_course_github(&quot;swirldev&quot;, &quot;R_Programming_E&quot;)
+</code></pre>
+
+<blockquote>
+<p>Complete swirl modules 1 and 2 (submit to <a href="mailto:domenico.giusti@uni-tuebingen.de">domenico.giusti@uni-tuebingen.de</a>)</p>
+</blockquote>
+
+<!-- Introduction to Markdown & RMarkdown -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-12" style="background:;">
+  
+  <hgroup>
+    <h2>Introduction to Markdown &amp; RMarkdown</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>In the beginning was Literate programming</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th align="left">YEAR</th>
+<th align="left">Event</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">1992</td>
+<td align="left">&quot;Literate Programming&quot; is introduced by <a href="http://www-cs-faculty.stanford.edu/%7Eknuth/lp.html">Donald Knuth</a> as &quot;that (which) combines a programming language with a documentation language, thereby making programs more robust, more portable, more easily maintained, and arguably more fun to write than programs that are written only in a high-level language. The main idea is to treat a <strong>program as a piece of literature</strong>, addressed to human beings rather than to a computer.&quot;</td>
+</tr>
+<tr>
+<td align="left">2002</td>
+<td align="left">Friedrich Leisch introduces <a href="https://cran.r-project.org/doc/Rnews/Rnews_2002-3.pdf">SWEAVE</a>, a program for &quot;Dynamic generation of statistical reports using literate data analysis&quot;</td>
+</tr>
+<tr>
+<td align="left">2004</td>
+<td align="left">John Gruber creates the <a href="https://daringfireball.net/projects/markdown/">Markdown</a> language in collaboration with <em>Aaron Swartz</em>. Their goal was to &quot;write using an easy-to-read, easy-to-write plain text format, and optionally convert it to structurally valid XHTML (or HTML)&quot;</td>
+</tr>
+<tr>
+<td align="left">2012</td>
+<td align="left"><a href="https://yihui.org/knitr/">knitr</a> R package released - knitr was inspired by SWEAVE</td>
+</tr>
+<tr>
+<td align="left">2014</td>
+<td align="left"><a href="https://rmarkdown.rstudio.com/">rmarkdown</a> R package released - extends Markdown to work with R/RStudio environment</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>rmarkdown</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="assets/img/logo.png" width=150px class='center'></img></p>
+
+<ul>
+<li><p><a href="https://rmarkdown.rstudio.com/">rmarkdown</a> extends the Markdown language originally intended to write documents for the Web (i.e. HTML).</p></li>
+<li><p>rmarkdown leverages <a href="http://pandoc.org">Pandoc</a> to convert between formats: from HTML (readable by web browsers) to DOC (such as from Microsoft Word or Google Docs) to ODT (Libre Office) to PDF (portable document format) to others like EPUB (e-books), HTML5 slide shows (slidy, ioslides), and TeX based documents and slides (Beamer).</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  
+  <hgroup>
+    <h2>rmarkdown</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>&quot;The rmarkdown package helps you <strong>create dynamic analysis documents that combine code, rendered output (such as figures), and prose</strong>. You bring your data, code, and ideas, and R Markdown renders your content into a polished document that can be used to:</p>
+
+<ul>
+<li>Do data science interactively within the RStudio IDE,</li>
+<li>Reproduce your analyses,</li>
+<li>Collaborate and share code with others, and</li>
+<li>Communicate your results with others.</li>
+</ul>
+
+<p>R Markdown documents can be rendered to many output formats including HTML documents, PDFs, Word files, slideshows, and more, allowing you to focus on the content while R Markdown takes care of your presentation&quot;.</p>
+
+<p><a href="https://rmarkdown.rstudio.com/docs/">rmarkdown</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>How rmarkdown works</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="assets/img/rmarkdownflow.png" width=500px class='center'></img></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/img/bandthree2.png" width=400px class='center'></img></p>
+
+<p><a href="https://rmarkdown.rstudio.com/docs/">rmarkdown</a></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  
+  <hgroup>
+    <h2>rmarkdown installation</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>&quot;The easiest way to install the rmarkdown package is from within the RStudio IDE, but you don’t need to explicitly install it or load it, as RStudio automatically does both when needed. A recent version of Pandoc (&gt;= 1.12.3) is also required; RStudio also automatically includes this too so you do not need to download Pandoc if you plan to use rmarkdown from the RStudio IDE.&quot;</p>
+
+<p><a href="https://rmarkdown.rstudio.com/docs/">rmarkdown</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Markdown syntax</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <pre><code class="r"># Heading level 1
+</code></pre>
+
+<h1>Heading level 1</h1>
+
+<pre><code class="r">## Heading level 2
+</code></pre>
+
+<h2>Heading level 2</h2>
+
+<pre><code class="r">### Heading level 3
+</code></pre>
+
+<h3>Heading level 3</h3>
+
+<pre><code class="r">#### Heading level 4
+</code></pre>
+
+<h4>Heading level 4</h4>
+
+<p><a href="https://www.markdownguide.org/">The Markdown Guide</a></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <pre><code class="r">**Bold text**
+</code></pre>
+
+<p><strong>Bold text</strong></p>
+
+<pre><code class="r">_Italic text_
+</code></pre>
+
+<p><em>Italic text</em></p>
+
+<pre><code class="r">1. First item
+2. Second item
+3. Third item
+</code></pre>
+
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+
+<!-- Introduction to Git & GitHub -->
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-19" style="background:;">
+  
+  <hgroup>
+    <h2>Introduction to Git &amp; GitHub</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Version control system</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src='assets/img/phd101212s.gif' width=350px class='center'></img></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src='assets/img/phd052810s.gif' width=750px class='center'></img></p>
+
+<p><a href="http://phdcomics.com/">PhD comics</a></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><img src='assets/img/VersionControl.jpg' width=750px class='center'></img></p>
+
+<p>This image (and the previous one) was created by Scriberia for <a href="https://the-turing-way.netlify.app/welcome.html">The Turing Way</a> community and is used under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY licence</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><img src='assets/img/20190216-git-github.png' width=1000px class='center'></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  
+  <hgroup>
+    <h2>Assignments</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Git</h3>
+
+<ul>
+<li>Download and install <a href="https://git-scm.com/">Git</a>
+
+<ul>
+<li>Windows <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
+<li>Mac <a href="https://git-scm.com/download/mac">https://git-scm.com/download/mac</a></li>
+<li>GNU/Linux <a href="https://git-scm.com/download/linux">https://git-scm.com/download/linux</a></li>
+</ul></li>
+</ul>
+
+<p>(Git is a command line program. Do not install any GUI client)</p>
+
+<h3>GitHub</h3>
+
+<ul>
+<li>Create an account on <a href="https://github.com">GitHub</a></li>
+<li>Send your username to your <a href="https://github.com/dncgst">instructor</a></li>
+</ul>
+
+<!-- Introduction to pre-print service (Zenodo) -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-24" style="background:;">
+  
+  <hgroup>
+    <h2>Introduction to Zenodo</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><img src='assets/img/zenodo-black-1000.png' width=750px class='center'></img></p>
+
+<p>Zenodo is a project funded by CERN, Open AIRE and the EU (Horizon 2020).</p>
+
+<p>&quot;The OpenAIRE project, in the vanguard of the open access and open data movements in Europe was commissioned by the EC to support their nascent Open Data policy by providing a catch-all repository for EC funded research. CERN, an OpenAIRE partner and pioneer in open source, open access and open data, provided this capability and Zenodo was launched in May 2013.&quot; <a href="https://about.zenodo.org/">Zenodo</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  
+  <hgroup>
+    <h2>Assignments</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Read the Zenodo <a href="https://about.zenodo.org/principles/">principles</a> (possibly after the 2nd lecture)</li>
+<li>Sign up on Zenodo (with GitHub)</li>
+</ul>
+
+<!-- Introduction to COS & OSF -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-27" style="background:;">
+  
+  <hgroup>
+    <h2>Introduction to COS &amp; OSF</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  
+  <article data-timings="">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9YuNGB3vNOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- References & Further resources -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Cheatsheets</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/master/base-r.pdf">Base R</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">R Markdown Reference Guide</a></li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/master/rmarkdown-2.0.pdf">R Markdown</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Reproducible research'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Open Scientist&#39;s Toolbox'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Introduction to R &amp; RStudio'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Setup'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='R'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='RStudio'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='RStudio'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='R packages'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='R packages'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Assignments'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Introduction to Markdown &amp; RMarkdown'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='In the beginning was Literate programming'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='rmarkdown'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='rmarkdown'>
+         15
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='How rmarkdown works'>
+         16
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='rmarkdown installation'>
+         17
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Markdown syntax'>
+         18
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Introduction to Git &amp; GitHub'>
+         19
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Version control system'>
+         20
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='NA'>
+         21
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='NA'>
+         22
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Assignments'>
+         23
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Introduction to Zenodo'>
+         24
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='NA'>
+         25
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Assignments'>
+         26
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Introduction to COS &amp; OSF'>
+         27
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='NA'>
+         28
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Cheatsheets'>
+         29
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+
+  
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
