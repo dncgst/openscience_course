@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Science</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Open Science">
+  <meta name="author" content="Dr. Domenico Giusti">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    
+  <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/UT_WBMW_Rot_RGB_01.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/UT_WBMW_Rot_RGB_01.png">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>Open Science</h1>
+    <h2>Basic principles and best practices</h2>
+    <p>Dr. Domenico Giusti<br/>Paläoanthropologie, Senckenberg Centre for Human Evolution and Palaeoenvironment</p>
+  </hgroup>
+  
+  <article></article>  
+      
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <article data-timings="">
+    <!-- Markdown emphasis workaround (https://github.com/ramnathv/slidify/issues/224) -->
+
+<style>
+em {
+  font-style: italic
+}
+</style>
+
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
+
+<h2>Week 4: Reproducible Research and Data Analysis</h2>
+
+<h3>Outline</h3>
+
+<ul>
+<li>Create a research compendium</li>
+<li>Publish a research compendium (Zenodo / OSF)</li>
+</ul>
+
+<!-- Recap week 3 -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-2" style="background:;">
+  
+  <hgroup>
+    <h2>Recap week 3</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Recap week 3</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Git &amp; GitHub workflow
+
+<ul>
+<li>Create a repository on GitHub &amp; link it to RStudio</li>
+<li>Write a README.md file</li>
+<li>Choose and apply a license for your repository/R code
+
+<ul>
+<li><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository">Licensing a GitHub repository</a></li>
+</ul></li>
+<li>commit &amp; push</li>
+</ul></li>
+<li><strong>TO DO: Unlock Pull &amp; Push from RStudio!</strong></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>swirl modules (week 3)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>5. Missing Values</h3>
+
+<ul>
+<li><code>NA</code> (not available/missing), <code>NAN</code> (not a number),</li>
+<li>Any operation involving NA generally yields NA as the result</li>
+<li><code>is.na()</code> function (logical result)</li>
+<li><code>TRUE</code> represented in R as 1, <code>FALSE</code> represented in R as 0 (good to know when counting)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>swirl modules (week 3)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>6. Subsetting Vectors</h3>
+
+<ul>
+<li><code>[]</code> place an &#39;index vector&#39; in square brackets to subset a vector</li>
+<li>&#39;index vector&#39;: logical, positive/negative integers, character
+
+<ul>
+<li>logical: <code>x[is.na(x)]</code>, <code>x[!is.na(x)]</code></li>
+<li>logical: <code>x[!is.na(x) &amp; x&gt;0]</code> (AND operator)</li>
+<li>pos. integer: <code>x[1:10]</code> (first 10 values of x), <code>x[c(3,5,7)]</code> (3rd, 5th and 7th values of x)</li>
+<li>neg. integer: <code>x[-c(2, 10)]</code> (all values except the 2nd and 10th)</li>
+<li>char: <code>vect[&quot;bar&quot;]</code></li>
+</ul></li>
+<li><code>names()</code> function</li>
+<li><code>identical()</code> function</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Assignments (week 4)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Complete swirl modules &#39;7: Matrices and Data Frames&#39; and &#39;8: Logic&#39; and submit your successful completion via email (<a href="mailto:domenico.giusti@uni-tuebingen.de">domenico.giusti@uni-tuebingen.de</a>)</p>
+
+<blockquote>
+<p><strong>swirl modules won&#39;t count towards your final grade but are highly recommended to follow. Those topics will be covered on the final exam.</strong></p>
+</blockquote>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-7" style="background:;">
+  
+  <hgroup>
+    <h2>Git &amp; GitHub basic workflow - Pull &amp; Push from RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Git w/ RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Start a project in a brand new working directory</h3>
+
+<ol>
+<li>Click the “File” menu button, then “New Project”</li>
+<li>Click “New Directory”</li>
+<li>Click “New Project”</li>
+<li>Type in the name of the directory to store your project, e.g. “test_rr”</li>
+<li><strong>Check &quot;Create a git repository&quot;</strong></li>
+<li>Hit the “Create Project” button!</li>
+<li>Create a new repository on GitHub</li>
+<li><code>git remote add origin git@github.com:dncgst/test10.git</code></li>
+<li><code>git branch -M master</code> (NOTE: RStudio names the principal branch <code>master</code>; GitHub recently renamed it <code>main</code>)</li>
+<li><code>git push -u origin master</code></li>
+<li>Restart RStudio after you run <code>git push -u origin master</code> from the command line</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Git w/ RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Associate a project with an existing working directory</h3>
+
+<ol>
+<li>Click the “File” menu button, then “New Project”</li>
+<li>Click &quot;Existing Directory&quot;</li>
+<li>Browse your project working directory</li>
+<li>Hit the “Create Project” button!</li>
+<li>Click the &quot;Tools&quot; menu button, then &quot;Project Options...&quot;</li>
+<li>Select &quot;Git/SVN&quot; from the menu on the left</li>
+<li>Version control system: Select &quot;Git&quot; from the dropdown menu</li>
+<li>Create a new repository on GitHub</li>
+<li><code>git remote add origin git@github.com:dncgst/test10.git</code></li>
+<li><code>git branch -M master</code> (NOTE: RStudio names the principal branch <code>master</code>; GitHub recently renamed it <code>main</code>)</li>
+<li><code>git push -u origin master</code></li>
+<li>Restart RStudio after you run <code>git push -u origin master</code> from the command line</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Git w/ RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Checkout a project from a version control repository</h3>
+
+<ol>
+<li>Click the “File” menu button, then “New Project”</li>
+<li>Click &quot;Version Control&quot;</li>
+<li>Click &quot;Git (<em>Clone</em> a project from a Git repository)&quot;</li>
+<li>Type the repository URL: (e.g. <a href="mailto:git@github.com">git@github.com</a>:dncgst/test12.git)</li>
+<li>Type the Project directory name: (e.g., test12)</li>
+<li>Hit the “Create Project” button!</li>
+<li>Branch named <code>main</code> also in RStudio</li>
+<li>Origin added during the cloning process</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Git w/ RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Configure Git wo/ Shell</h3>
+
+<pre><code class="r">install.packages(&#39;usethis&#39;)
+library(&#39;usethis&#39;)
+usethis::use_git_config(user.name = &quot;dncgst&quot;, user.email = &quot;dncgst@autistici.org&quot;)
+usethis::edit_git_config()
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Git w/ RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Create a Personal Access Token (PAT) on GitHub</h3>
+
+<blockquote>
+<p>The best way to connect RStudio and GitHub is using your username and a Personal Access Token (PAT). To generate a personal access token, use the <code>create_github_token()</code> function from usethis. This will take you to the appropriate page on the GitHub website, where you’ll give your token a name and copy it (don’t lose it because it will never appear again!). <a href="https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/">How to Use Git/GitHub with R</a></p>
+</blockquote>
+
+<pre><code class="r">library(&#39;usethis&#39;)
+usethis::create_github_token() # accept default settings and generate the token
+# copy the generated token
+install.packages(&#39;gitcreds&#39;)
+library(&#39;gitcreds&#39;)
+gitcreds_set()
+# enter your copied token
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Git w/ RStudio</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Start a project in a brand new working directory</h3>
+
+<ol>
+<li>Click the “File” menu button, then “New Project”</li>
+<li>Click “New Directory”</li>
+<li>Click “New Project”</li>
+<li>Type in the name of the directory to store your project, e.g. “test_rr”</li>
+<li><strong>Check &quot;Create a git repository&quot;</strong></li>
+<li>Hit the “Create Project” button!</li>
+<li>Do you first commit</li>
+<li><code>library(usethis)</code></li>
+<li>use the <code>use_github()</code> function, which will create a GitHub repo and connect it to your current RStudio project</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-14" style="background:;">
+  
+  <hgroup>
+    <h2>Create and publish a research compendium</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>What is a research compendium?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img style='margin-top: 10px' class='center' src='assets/img/ResearchCompendium.jpg' width=480px></img></p>
+
+<p>This image was created by Scriberia for <a href="https://the-turing-way.netlify.app/welcome.html">The Turing Way</a> community and is used under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY licence</a></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>A research compendium is a collection of all digital parts of a research project including <em>data</em>, <em>code</em>, <em>texts</em>.</li>
+<li>A research compendium can be constructed with minimal technical knowledge (a basic folder structure combining all components can be sufficient).</li>
+<li>Publishing your research paper along with a research compendium allows others to access your input, test your analysis, and, if the compendium can be executed, rerun to assess the resulting output. This does not only instill trust in your research but can give you more visibility.</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Structure of a Research Compendium</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Three principles should be kept in mind when constructing a research compendium.</p>
+
+<ul>
+<li>Files should be organized in a conventional folder structure;</li>
+<li>Data, methods, and output should be clearly separated;</li>
+<li>The computational environment should be specified.</li>
+</ul>
+
+<p><a href="https://peerj.com/preprints/3192v2/">Marwick et al. 2018</a></p>
+
+<ul>
+<li><a href="https://research-compendium.science/">Research Compendium</a> contains links to further resources and publications on research compendia
+
+<ul>
+<li>GitHub · <a href="https://github.com/topics/research-compendium/">https://github.com/topics/research-compendium/</a></li>
+<li>Zenodo · <a href="https://zenodo.org/communities/research-compendium/">https://zenodo.org/communities/research-compendium/</a></li>
+<li>OSF · <a href="https://osf.io/search/?q=tags:research-compendium">https://osf.io/search/?q=tags:research-compendium</a></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h3>Basic Compendium</h3>
+  </hgroup>
+  
+  <article data-timings="">
+    <pre><code>compendium/
+├── data
+|   ├── raw_data.csv
+│   ├── my_data.csv
+├── figures
+│   └── fig1.jpg
+├── src/analysis
+│   ├── my_script.R
+|   ├── fig1.R
+├── text/doc
+│   └── manuscript.Rmd
+├── DESCRIPTION
+├── LICENSE
+└── README.md
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h3>Executable Compendium</h3>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>It contains code, data, text, figures + the <em>computing environment</em> is described in the <code>Dockerfile</code>, the dependencies of files and how to automatically generate the results are described in the <code>Makefile</code> (e.g., <a href="https://github.com/benmarwick/1989-excavation-report-Madjedbebe">benmarwick/1989-excavation-report-Madjedbebe</a>).</p>
+
+<pre><code>compendium/
+├── data
+│   ├── my_data.csv
+├── Dockerfile
+├── figures
+│   └── fig1.jpg
+├── Makefile
+├── src/analysis
+|   ├── fig1.R
+├── text/doc
+│   └── manuscript.Rmd
+├── DESCRIPTION
+├── LICENSE
+└── README.md
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Create a Research Compendium w/Docker</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <blockquote>
+<p>A version control repository can be a research compendium; A Makefile makes it executable; A reproducible environment makes it reproducible.</p>
+
+<p>A Docker container can be seen as a computer inside your computer. The cool thing about this virtual computer is that you can send it to your friends; And when they start this computer and run your code they will get exactly the same results as you did.</p>
+</blockquote>
+
+<ul>
+<li>Get Docker <a href="https://docs.docker.com/get-docker/">https://docs.docker.com/get-docker/</a>
+
+<ul>
+<li>&quot;Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.&quot;</li>
+</ul></li>
+<li>Follow this tutorial: <a href="https://jsta.github.io/r-docker-tutorial/">https://jsta.github.io/r-docker-tutorial/</a>
+-</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Publish a Research Compendium w/ Zenodo</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Log in w/ GitHub</li>
+<li>Settings / GitHub
+
+<ol>
+<li>Flip the switch</li>
+<li>Create a release</li>
+<li>Get the badge (DOI)</li>
+</ol></li>
+<li>Edit upload and add some METADATA</li>
+<li>Publish</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Use a Research Compendium</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>A research compendium can be used in several ways, including (but not limited to):</p>
+
+<ul>
+<li><strong>Peer review</strong>: If peers can check what you have done, they can review it much more thoroughly.</li>
+<li><strong>Understanding research</strong>: If you really want to understand what someone has done in their research project, the research compendium is what you need to look at.</li>
+<li><strong>Teaching</strong>: Research compendia can be great examples to be used in teaching.</li>
+<li><strong>Reproducibility studies / repro hacks</strong>: A research compendium allows other researchers to attempt (and hopefully succeed) to redo your computations.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Recap week 3'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Recap week 3'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='swirl modules (week 3)'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='swirl modules (week 3)'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Assignments (week 4)'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Git &amp; GitHub basic workflow - Pull &amp; Push from RStudio'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Git w/ RStudio'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Git w/ RStudio'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Git w/ RStudio'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Git w/ RStudio'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Git w/ RStudio'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Git w/ RStudio'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Create and publish a research compendium'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='What is a research compendium?'>
+         15
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Structure of a Research Compendium'>
+         16
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Basic Compendium'>
+         17
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Executable Compendium'>
+         18
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Create a Research Compendium w/Docker'>
+         19
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Publish a Research Compendium w/ Zenodo'>
+         20
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Use a Research Compendium'>
+         21
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
