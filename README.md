@@ -25,7 +25,7 @@ Learn the basic principles of open science (open methods, open source, open data
 | [2. Open Research Data and Materials](./2_open_research_data_and_materials) |
 | [3. Open Research Software and Open Source](./3_open_research_software_and_open_source) |
 | [4. Reproducible Research and Data Analysis](./4_reproducible_research_and_data_analysis) |
-| 5. Open Access to Published Research Results |
+| [5. Open Access to Published Research Results](./5_open_access_to_published_research_results) |
 | 6. Open Licensing and File Formats           |
 | 7. Collaborative Platforms                   |
 | 8. Open Peer Review, Metrics, and Evaluation |
