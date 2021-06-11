@@ -58,9 +58,13 @@ The final exam consists of quizzes.
 
 Regardless of your platform (Windows, Mac or Linux) you will need a high-speed Internet connection in order to watch the videos, download data and software, submit your assignments. You will also need to have admin permits on your PC to be able to install software. This course make exclusively use of free and open software.
 
-### References
+### Reading list
 
-* FOSTER [https://www.fosteropenscience.eu]
+* Marwick et al. 2017. [Open science in archaeology](https://osf.io/preprints/socarxiv/72n8g/). SAA Archaeological Record.
+* Marwick & Birch. 2018. [A Standard for the Scholarly Citation of Archaeological Data as an Incentive to Data Sharing](https://doi.org/10.1017/aap.2018.3). Advances in Archaeological Practice 1-19.
+* Schmidt & Marwick. 2020. [Tool-Driven Revolutions in Archaeological Science](http://doi.org/10.5334/jcaa.29). Journal of Computer Applications in Archaeology, 3(1), 18-32.
+* Marwick. 2017. [Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation](https://doi.org/10.1007/s10816-015-9272-9). J Archaeol Method Theory 24, 424-450.
+* Marwick. 2020. [Open access to publications to expand participation in archaeology](https://doi.org/10.1080/00293652.2020.1837233). Norwegian Archaeological Review.
 
 ### Copyright statement
 
