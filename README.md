@@ -34,8 +34,6 @@ Learn the basic principles of open science (open methods, open source, open data
 | 11. Open Educational Resources               |
 | 12. Open Advocacy                            |
 
-Lectures are based on [The Open Science Training Handbook](https://book.fosteropenscience.eu/en/). The Open Science Training Handbook is an Open Educational Resource, and is therefore available under the [Creative Commons Public Domain Dedication (CC0 1.0 Universal)](https://creativecommons.org/publicdomain/zero/1.0/).
-
 ### Assessments
 
 #### Quizzes
@@ -68,8 +66,8 @@ Regardless of your platform (Windows, Mac or Linux) you will need a high-speed I
 
 ### Copyright statement
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Open Science. Guiding principles and best practices</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Domenico Giusti</span> is an Open Educational Resource, and is therefore licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />
+ <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Open Science. Guiding principles and best practices</span> by <span property="cc:attributionName">Domenico Giusti</span> is an Open Educational Resource, and is therefore licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
-This work is Based on 'The Open Science Training Handbook' at <a xmlns:dct="http://purl.org/dc/terms/" href="https://book.fosteropenscience.eu/en/" rel="dct:source">https://book.fosteropenscience.eu/en/</a>.
+Lectures are based on 'The Open Science Training Handbook' at <a xmlns:dct="http://purl.org/dc/terms/" href="https://book.fosteropenscience.eu/en/" rel="dct:source">https://book.fosteropenscience.eu/en/</a>.
 
-Some of the materials referenced in this course might be copyright protected — if so, this will be indicated.  I have tried to acknowledge all sources. If for some reason I have forgotten to provide you with proper credits, it has not been done with malicious intent. Feel free to contact me for any corrections.
+Some of the materials referenced in this course might be copyright protected — if so, this will be indicated. I have tried to acknowledge all sources. If for some reason I have forgotten to provide you with proper credits, it has not been done with malicious intent. Feel free to contact me for any corrections.
