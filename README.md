@@ -66,7 +66,7 @@ Regardless of your platform (Windows, Mac or Linux) you will need a high-speed I
 
 ### Copyright statement
 
- <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Open Science. Guiding principles and best practices</span> by <span property="cc:attributionName">Domenico Giusti</span> is an Open Educational Resource, and is therefore licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Open Science. Guiding principles and best practices</span> © 2021 by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Domenico Giusti</span> is an Open Educational Resource, and is therefore licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />
 
 Lectures are based on 'The Open Science Training Handbook' at <a xmlns:dct="http://purl.org/dc/terms/" href="https://book.fosteropenscience.eu/en/" rel="dct:source">https://book.fosteropenscience.eu/en/</a>.
 
