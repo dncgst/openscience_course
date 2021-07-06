@@ -452,6 +452,8 @@ Despite major funding agencies (e.g., ERC and DFG) are promoting Open Science, p
 ### References
 
 * [Larivière V, Haustein S, Mongeon P (2015) **The Oligopoly of Academic Publishers in the Digital Era**. PLoS ONE 10(6): e0127502.](https://doi.org/10.1371/journal.pone.0127502)
+* MacGregor J., Stranack K., Willinsky J. (2014) The Public Knowledge Project: Open Source Tools for Open Access to Scholarly Communication. In: Bartling S., Friesike S. (eds) Opening Science. Springer, Cham. https://doi.org/10.1007/978-3-319-00026-8_11
+* Binfield P. (2014) Novel Scholarly Journal Concepts. In: Bartling S., Friesike S. (eds) Opening Science. Springer, Cham. https://doi.org/10.1007/978-3-319-00026-8_10
 
 ### Further resources
 

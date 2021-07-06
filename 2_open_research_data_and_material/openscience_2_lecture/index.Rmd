@@ -256,7 +256,10 @@ P.S. The Semantic Web is widely used in the development of knowledge graphs in d
 --- .class #id
 ## Sensitive data & Intellectual property
 
-* Sensitive data - Many fields of scientific disciplines involve working with sensitive personal data. Their management is well regulated in data protection legislation (in Europe through national implementations of the [General Data Protection Regulation](https://gdpr.eu/)) and ethics procedures as they are established in most research institutions /// Sensitive cultural heritage data
+* Sensitive data - Many fields of scientific disciplines involve working with sensitive personal data. Their management is well regulated in data protection legislation (in Europe through national implementations of the [General Data Protection Regulation](https://gdpr.eu/)) and ethics procedures as they are established in most research institutions
+
+  - Sensitive cultural heritage data (e.g., the location of burial grounds).
+  - > the most dramatic cases of looting, such as those carried out on the archaeological sites insouthern Iraq between 2003 and 2007 (Emberling and  Hanson 2008), exploited the weaknesses of local control, impunity for perpetrators, and strong market demand [Marchetti2018](http://doi.org/10.1007/s10814-017-9112-4)
 
 * Intellectual Property (IP) - "a legal term that refers to creations of the mind. Examples of intellectual property include music, literature, and other artistic works; discoveries and inventions; and phrases, symbols, and designs". [Open Research Glossary](http://www.righttoresearch.org/resources/OpenResearchGlossary/index.shtml)
 
@@ -438,14 +441,14 @@ Data citation PRINCIPLES: Importance, Credit and Attribution, Evidence, Unique I
 [Stodden 2010](https://doi.org/10.7916/D8T15BNC)
 
 --- .class #id
-## Archaeological Data
+## Sharing Archaeological Data
 
 <q>Data sharing is unfunded, unrewarded, and only rarely required.</q>
 
 [Marwick & Birch 2018](https://doi.org/10.1017/aap.2018.3)
 
 --- .class #id
-## How to open up data
+## How to Open up your Data
 
 1. Choose your dataset(s) appropriate packaging and documentation (Metadata), to enable others to understand, reproduce, and re-use in alternative ways
 2. Apply an Open license (Legal Openness)
@@ -454,6 +457,20 @@ Data citation PRINCIPLES: Importance, Credit and Attribution, Evidence, Unique I
      - Apply a [suitable ‘open’ license](https://opendefinition.org/licenses/) that licenses all of these rights and supports the definition of openness
 3. Make the data available, in bulk and in a useful Open format (Technical Openness)
 4. Make it discoverable on the web
+
+--- .class #id
+## Big Data & Data Quality in Archaeology
+
+> [We need to be more cognizant of the possibilities andrisks associated with digital data and methodologies, and the consequences that may ﬂow, appreciating that they  are not simple, straightforward, or capable of being set aside in the enthusiastic pursuit of data-driven solutions. [Huggett2020](http://doi.org/10.1080/00934690.2020.1713281)
+
+> As stressed by Kitchin (2014), the exponential growth in the production of digital data creates challenges related to the handling, processing, storing, and interpretation of the data. The problem is that as the amount of data increases enormously, the percentage of these data that gets analyzed and processed shrinks. Another issue is data quality; scarce or poor-quality data will definitely undermine research efforts and produce weak scholarship. In this light, _data organization through coherent infrastructures and quality control_ become key requirements in the task of changing how we produce knowledge and disseminate the findings of archaeological research. [Marchetti 2018](https://doi.org/10.1007/s10814-017-9112-4)
+
+---
+## Data Durability and Software Obsolescence
+
+Preservation in the digital realm may entail disruption and loss of data
+
+> The use of open source software or fee-paying platforms that take care of onversion updates for hosted data like tDAR does, in fact, provide a certain  degree of assurance about data durability and accessibility. The key factor is that data should not be abandoned in a virtual box but constantly cared for by a system manager. Data perusal and exploration must be ensured by constant data availability and access. [Marchetti2018](http://doi.org/10.1007/s10814-017-9112-4)
 
 <!-- Summary -->
 
