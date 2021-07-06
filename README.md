@@ -26,8 +26,8 @@ Learn the basic principles of open science (open methods, open source, open data
 | [3. Open Research Software and Open Source](./3_open_research_software_and_open_source) |
 | [4. Reproducible Research and Data Analysis](./4_reproducible_research_and_data_analysis) |
 | [5. Open Access to Published Research Results](./5_open_access_to_published_research_results) |
-| 6. Open Licensing and File Formats           |
-| 7. Collaborative Platforms                   |
+| [6. Open Licensing and File Formats](./6_open_licensing_and_file_formats) |
+| [7. Collaborative Platforms](./7_collaborative_platforms) |
 | 8. Open Peer Review, Metrics, and Evaluation |
 | 9. Open Science Policies                     |
 | 10. Citizen Science                          |
@@ -63,6 +63,10 @@ Regardless of your platform (Windows, Mac or Linux) you will need a high-speed I
 * Schmidt & Marwick. 2020. [Tool-Driven Revolutions in Archaeological Science](http://doi.org/10.5334/jcaa.29). Journal of Computer Applications in Archaeology, 3(1), 18-32.
 * Marwick. 2017. [Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation](https://doi.org/10.1007/s10816-015-9272-9). J Archaeol Method Theory 24, 424-450.
 * Marwick. 2020. [Open access to publications to expand participation in archaeology](https://doi.org/10.1080/00293652.2020.1837233). Norwegian Archaeological Review.
+
+### Other resources
+
+* [Open Science resources](./openscience_resources.md)
 
 ### Copyright statement
 
