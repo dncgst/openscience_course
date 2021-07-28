@@ -5,7 +5,7 @@ Open Science. Guiding principles and best practices
 
 ### Course description
 
-Open science is the movement to make scientific research, data and dissemination accessible to all levels of an inquiring society [@FOSTER]. Open Science is about increased transparency, re-use, participation, cooperation, accountability and reproducibility for research. Open science is science done properly. This course is tailored for undergraduate students and early-career researchers in archaeological science. It intends to teach guiding principles (open methods, open source, open data, open access, open peer review, open educational resources) and best practices (reproducible research) for doing science properly. Beside theoretical modules, this course provides hands-on sections to various methods that can be used to make your research reproducible and fulfil the current EU policy requirement for open science.
+Open science is the movement to make scientific research, data and dissemination accessible to all levels of an inquiring society [@FOSTER]. Open Science is about increased transparency, re-use, participation, cooperation, accountability and reproducibility for research. Open science is science done properly. This course is tailored for graduate students and early-career researchers in archaeological science. It intends to teach guiding principles (open methods, open source, open data, open access, open peer review, open educational resources) and best practices (reproducible research) for doing science properly. Beside theoretical modules, this course provides hands-on sections to various methods that can be used to make your research reproducible and fulfil the current EU policy requirement for open science.
 
 Offered in presence and/or online
 
@@ -28,7 +28,7 @@ Learn the basic principles of open science (open methods, open source, open data
 | [5. Open Access to Published Research Results](./5_open_access_to_published_research_results) |
 | [6. Open Licensing and File Formats](./6_open_licensing_and_file_formats) |
 | [7. Collaborative Platforms](./7_collaborative_platforms) |
-| 8. Open Peer Review, Metrics, and Evaluation |
+| [8. Open Peer Review, Metrics, and Evaluation](./8_open_peer_review_metrics_and_evaluation) |
 | 9. Open Science Policies                     |
 | 10. Citizen Science                          |
 | 11. Open Educational Resources               |
@@ -42,7 +42,7 @@ There are 12 quizzes (week 1 to 12), to be submitted by email. You must earn a g
 
 #### swirl modules
 
-[swirl](https://swirlstats.com/) is an interactive learning environment for the R programming language. The are ... swirl modules (week .. to 12), to be submitted by email. The swirl modules are optional and will not count toward your final grade, but it is highly recommended to complete them.
+[swirl](https://swirlstats.com/) is an interactive learning environment for the R programming language. There are 15 swirl modules to be submitted by email. The swirl modules are optional and will not count toward your final grade, but it is highly recommended to complete them.
 
 #### Final exercise
 
