@@ -22,7 +22,7 @@ Learn the basic principles of open science (open methods, open source, open data
 | Lectures                                                                |
 |-------------------------------------------------------------------------|
 | [1. Open Concepts and Principles](./1_open_concepts_and_principles/openscience_1_lecture/index.html) |
-| [2. Open Research Data and Materials](./2_open_research_data_and_materials/openscience_2_lecture/index.html) |
+| [2. Open Research Data and Materials](./2_open_research_data_and_material/openscience_2_lecture/index.html) |
 | [3. Open Research Software and Open Source](./3_open_research_software_and_open_source/openscience_3_lecture/index.html) |
 | [4. Reproducible Research and Data Analysis](./4_reproducible_research_and_data_analysis/openscience_4_lecture/index.html) |
 | [5. Open Access to Published Research Results](./5_open_access_to_published_research_results/openscience_5_lecture/index.html) |
