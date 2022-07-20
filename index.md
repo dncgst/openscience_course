@@ -21,14 +21,29 @@ Learn the basic principles of open science (open methods, open source, open data
 
 | Lectures                                                                |
 |-------------------------------------------------------------------------|
-| [1. Open Concepts and Principles](./1_open_concepts_and_principles/openscience_1_lecture/index.html)     |
-| [2. Open Research Data and Materials](./2_open_research_data_and_materials) |
-| [3. Open Research Software and Open Source](./3_open_research_software_and_open_source) |
-| [4. Reproducible Research and Data Analysis](./4_reproducible_research_and_data_analysis) |
-| [5. Open Access to Published Research Results](./5_open_access_to_published_research_results) |
-| [6. Open Licensing and File Formats](./6_open_licensing_and_file_formats) |
-| [7. Collaborative Platforms](./7_collaborative_platforms) |
-| [8. Open Peer Review, Metrics, and Evaluation](./8_open_peer_review_metrics_and_evaluation) |
+| [1. Open Concepts and Principles](./1_open_concepts_and_principles/openscience_1_lecture/index.html) |
+| [2. Open Research Data and Materials](./2_open_research_data_and_materials/openscience_2_lecture/index.html) |
+| [3. Open Research Software and Open Source](./3_open_research_software_and_open_source/openscience_3_lecture/index.html) |
+| [4. Reproducible Research and Data Analysis](./4_reproducible_research_and_data_analysis/openscience_4_lecture/index.html) |
+| [5. Open Access to Published Research Results](./5_open_access_to_published_research_results/openscience_5_lecture/index.html) |
+| [6. Open Licensing and File Formats](./6_open_licensing_and_file_formats/openscience_6_lecture/index.html) |
+| [7. Collaborative Platforms](./7_collaborative_platforms/openscience_7_lecture/index.html) |
+| [8. Open Peer Review, Metrics, and Evaluation](./8_open_peer_review_metrics_and_evaluation/openscience_8_lecture/index.html) |
+| 9. Open Science Policies                     |
+| 10. Citizen Science                          |
+| 11. Open Educational Resources               |
+| 12. Open Advocacy                            |
+
+| Excercises                                                              |
+|-------------------------------------------------------------------------|
+| [1. Open Concepts and Principles](./1_open_concepts_and_principles/openscience_1_exercises/index.html)     |
+| [2. Open Research Data and Materials](./2_open_research_data_and_materials/openscience_2_exercises/index.html) |
+| [3. Open Research Software and Open Source](./3_open_research_software_and_open_source/openscience_3_exercises/index.html) |
+| [4. Reproducible Research and Data Analysis](./4_reproducible_research_and_data_analysis/openscience_4_exercises/index.html) |
+| [5. Open Access to Published Research Results](./5_open_access_to_published_research_results/openscience_5_exercises/index.html) |
+| 6. Open Licensing and File Formats           |
+| 7. Collaborative Platforms                   |
+| 8. Open Peer Review, Metrics, and Evaluation |
 | 9. Open Science Policies                     |
 | 10. Citizen Science                          |
 | 11. Open Educational Resources               |

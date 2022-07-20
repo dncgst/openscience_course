@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Science</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Open Science">
+  <meta name="author" content="Dr. Domenico Giusti">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    
+  <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/UT_WBMW_Rot_RGB_01.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/UT_WBMW_Rot_RGB_01.png">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>Open Science</h1>
+    <h2>Basic principles and best practices</h2>
+    <p>Dr. Domenico Giusti<br/>Paläoanthropologie, Senckenberg Centre for Human Evolution and Palaeoenvironment</p>
+  </hgroup>
+  
+  <article></article>  
+      
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <article data-timings="">
+    <!-- Markdown emphasis workaround (https://github.com/ramnathv/slidify/issues/224) -->
+
+<style>
+em {
+  font-style: italic
+}
+</style>
+
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
+
+<h2>Week 2: Open Research Data</h2>
+
+<h3>Outline</h3>
+
+<ul>
+<li>Research data/project management w/ RStudio
+
+<ul>
+<li>Data storage and organization of a research project repository</li>
+<li>Data organization in spreadsheets</li>
+<li>Data manipulation</li>
+<li>File formats</li>
+<li>Import raw data</li>
+<li>Exploring data frames</li>
+<li>Tidy data w/ tidyverse (raw data -&gt; processed data) --&gt; NEXT TIME</li>
+<li>Documentation and Metadata</li>
+<li>Sharing and archiving --&gt; NEXT TIME</li>
+</ul></li>
+</ul>
+
+<!-- Recap week 1 -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-2" style="background:;">
+  
+  <hgroup>
+    <h2>Recap week 1</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Recap week 1</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Introduction to some of the best tools for doing Reproducible Research
+
+<ul>
+<li>R &amp; RStudio (swirl modules 1 and 2)</li>
+<li>(R)Markdown (examples)</li>
+<li>Git &amp; GitHub (Sign up on GitHub and email your username)</li>
+<li>Zenodo, OSF (Sign up on Zenodo using your GitHub account)</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>swirl modules</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <pre><code class="r">install.packages(&quot;swirl&quot;) # Install the swirl package
+library(&quot;swirl&quot;) # Load the swirl package in the R environment
+swirl() # Start swirl
+</code></pre>
+
+<p>You are prompted to install a course, and a list of 5 options is offered. Select option &#39;5. Don&#39;t install anything for me. I&#39;ll do it myself&#39;. A GitHub page will open and the swirl session will close. We want to install the R_Programming_E course. Back to RStudio, type in the console</p>
+
+<pre><code class="r">install_course_github(&quot;swirldev&quot;, &quot;R_Programming_E&quot;)
+swirl() # Start again swirl
+</code></pre>
+
+<p>You should now see listed the course &#39;1: R Programming E&#39;</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>swirl modules (week 1)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>1: Basic Building Blocks</h3>
+
+<ul>
+<li>create variables</li>
+<li>numeric vectors</li>
+<li>c() function</li>
+<li>?, help() functions</li>
+<li>vectorization</li>
+<li>arithmetic operations</li>
+<li>sqrt(), abs() functions</li>
+<li>auto-complation (Tab) and command history (Up arrow)</li>
+</ul>
+
+<blockquote>
+<p>Would you like to inform someone about your successful completion of this lesson via email? Select &#39;1. Yes&#39;, type in your full name and my email address <a href="mailto:domenico.giusti@uni-tuebingen.de">domenico.giusti@uni-tuebingen.de</a>. Your email client should open. Send that email.</p>
+</blockquote>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>swirl modules (week 1)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>2: Workspace and Files</h3>
+
+<ul>
+<li>getwd(), setwd() functions</li>
+<li>ls(), list.files() functions</li>
+<li>args() function</li>
+<li>dir.create(), file.create() functions</li>
+<li>file.exists(), file.info(), file.rename(), file.copy(), file.remove(), file.path() functions</li>
+</ul>
+
+<blockquote>
+<p>Your operating system and RStudio provide simpler graphic tools for these sorts of tasks, but having the ability to manipulate files programatically is useful in reproducible research. Also useful when working with dozens, thousands or milions of files.</p>
+
+<p>If you have to repeat the same tasks more than [individual threshold], code them once!</p>
+</blockquote>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Assignments (week 2)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Complete swirl modules &#39;3: Sequences of Numbers&#39; and &#39;4: Vectors&#39; and submit your successful completion via email (<a href="mailto:domenico.giusti@uni-tuebingen.de">domenico.giusti@uni-tuebingen.de</a>)</p>
+
+<blockquote>
+<p><strong>swirl modules won&#39;t count towards your final grade but are highly recommended to follow.</strong></p>
+</blockquote>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-8" style="background:;">
+  
+  <hgroup>
+    <h2>Research data/project management (w/ RStudio)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><q>Managing your projects in a reproducible fashion doesn&#39;t just make your science reproducible, it makes your life easier.</q> <a href="https://twitter.com/vsbuffalo/status/323638476153167872">@vsbuffalo</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>The scientific process is naturally incremental</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src='assets/img/VersionControl.jpg' width=650px class='center'></img></p>
+
+<p>This image (and the previous one) was created by Scriberia for <a href="https://the-turing-way.netlify.app/welcome.html">The Turing Way</a> community and is used under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY licence</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Create a self-contained R project (w/ RStudio)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>We’re going to create a new project in RStudio:</p>
+
+<ol>
+<li>Click the “File” menu button, then “New Project”.</li>
+<li>Click “New Directory”.</li>
+<li>Click “New Project”.</li>
+<li>Type in the name of the directory to store your project, e.g. “test_rr”.</li>
+<li>(Sip Git for now...)</li>
+<li>Click the “Create Project” button.</li>
+</ol>
+
+<p>An <code>.Rproj</code> file is created in your project directory. All your data, plots and scripts will now be relative to the project directory.</p>
+
+<blockquote>
+<p><strong>Put each project in its own directory, which is named after the project.</strong></p>
+</blockquote>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Organization of a data analysis in a project directory</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li><p><code>/data</code>:</p>
+
+<ul>
+<li>raw DATA + metadata</li>
+<li>processed DATA</li>
+</ul></li>
+<li><p><code>/figures</code>:</p>
+
+<ul>
+<li>exploratory figures</li>
+<li>final figures</li>
+</ul></li>
+<li><p><code>/src</code>, <code>/R</code>:</p>
+
+<ul>
+<li>raw / unused R script</li>
+<li>final R script</li>
+<li>R markdown files</li>
+</ul></li>
+<li><p><code>/text</code>, <code>/doc</code>:</p>
+
+<ul>
+<li>the final article/report</li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li><code>README</code> file
+
+<ul>
+<li>project description (abstract)</li>
+<li>description of the directories content</li>
+<li>associated DOI (data/code repository, published paper)</li>
+<li>data/code/text licences</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p><strong>Name all files to reflect their content or function.</strong></p>
+</blockquote>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Don&#39;t do that!</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src='assets/img/phd101212s.gif' width=350px class='center'></img></p>
+
+<p><a href="http://phdcomics.com/">PhD comics</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Pros</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>It keeps raw (original) and processed (modified) data separated -&gt; Ensure the integrity of your data
+
+<ul>
+<li><strong>Treat raw data as read only!</strong> Working with raw data interactively (e.g., in Excel) means that you will overwrite the original format, and with no track changes you won&#39;t know how it has been modified.</li>
+<li>Store processed data in a separate file. Significant preprocessing is often needed to get your raw data into a tidy format for analysis.</li>
+</ul></li>
+<li>It keeps organized in different folders files with different extensions -&gt; Makes easier to find things</li>
+<li>It keeps your code and output in different folders -&gt; Treat generated output as disposable
+
+<ul>
+<li>Many analyses are exploratory and don’t end up being used in the final project, and some of the analyses get shared between projects.</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Pros</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>It keeps separate function definition and application
+
+<ul>
+<li>When your project is in its early stages, the initial .R script file usually contains many lines of directly executed code. As it matures, <em>reusable</em> chunks of code are saved as R functions. It’s a good idea to separate these functions into two separate folders; one to store useful functions that you’ll reuse across analyses and projects, and one to store the analysis scripts.</li>
+</ul></li>
+<li>It makes it simpler to share your project with someone else, to upload data/code with your manuscript submission, to pick the project back up after a break.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>archdata</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>For this exercise we are going to use the <a href="https://cran.rstudio.com/web/packages/archdata/index.html">archdata</a>. &quot;The archdata package provides several types of data that are typically used in archaeological research. It provides all of the data sets used in <a href="https://doi.org/10.1017/9781139628730">Quantitative Methods in Archaeology Using R</a>&quot; by David L Carlson.&quot;</p>
+
+<p>You can get the whole collection of datasets by installing the package &#39;archdata&#39;</p>
+
+<pre><code>install.packages(&quot;archdata&quot;)
+</code></pre>
+
+<p>The collection is released under the GNU GENERAL PUBLIC LICENSE <a href="https://cran.rstudio.com/web/licenses/GPL-3">GPL3</a>. Read the package <a href="https://cran.rstudio.com/web/packages/archdata/archdata.pdf">reference manual</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Load data (f/ the archdata package)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Create a new .Rmd file in your RStudio &#39;test_rr&#39; project.</p>
+
+<pre><code class="r"># load the Acheulean dataset
+install.packages(&quot;archdata&quot;) # install the package
+library(archdata) # load the package
+data(package=&quot;archdata&quot;) # show the data sets in package ‘archdata’
+data(&quot;Acheulean&quot;) # load the Acheulean data set in the R Environment
+?Acheulean
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Save and read data (f/ Dropbox)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <pre><code class="r"># create a /data directory
+getwd() # get working directory
+list.files() # list files in the wd
+dir.create(&quot;data&quot;) # create a /data directory
+
+# download the data from Dropbox
+url &lt;- &quot;https://www.dropbox.com/s/zpf2062jrdbhj2s/Acheulean.csv?raw=1&quot;
+# NOTE: add a raw=1 URL parameter or you will get a HTML preview page,
+# not the file content itself
+destfile &lt;- &quot;data/Acheulean.csv&quot; # specify destination where file should be saved
+download.file(url, destfile) # download the CSV file
+
+# read the CSV file
+Acheulean &lt;- read.csv(file = &quot;data/Acheulean.csv&quot;,
+                      header = TRUE, sep = &quot;,&quot;, dec = &quot;.&quot;, row.names = 1)
+# There are functions to read as well Excel files.
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>The Acheulean dataset</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>First look at the dataset</p>
+
+<pre><code class="r">View(Acheulean)
+str(Acheulean) # data object stucture
+summary(Acheulean) # summary
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Tidy data</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>&quot;80% of data analysis is spent on the cleaning and preparing data. And it’s not just a first step, but it must be repeated many times over the course of analysis as new problems come to light or new data is collected.&quot; <a href="https://tidyr.tidyverse.org/articles/tidy-data.html">Tidy Data</a></p>
+
+<p>Data structure:</p>
+
+<ul>
+<li>Every column is a variable and contains one &quot;type&quot; of data
+
+<ul>
+<li>Logical (TRUE, FALSE)</li>
+<li>Numeric (12.3, 5, 999.99)</li>
+<li>Integer (1, 2, 3, 4)</li>
+<li>Character (a, good, &#39;TRUE&#39;, &#39;12.3&#39;)</li>
+<li>Factor (male, female)</li>
+</ul></li>
+<li>Every row is an observation.</li>
+<li>Every cell is a single value.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Tidying messy datasets</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>&quot;Real datasets can, and often do, violate the three precepts of tidy data in almost every way imaginable. While occasionally you do get a dataset that you can start analysing immediately, this is the exception, not the rule.&quot; <a href="https://tidyr.tidyverse.org/articles/tidy-data.html">Tidy Data</a></p>
+
+<ul>
+<li>Column headers are values, not variable names.</li>
+<li>Multiple variables are stored in one column.</li>
+<li>Variables are stored in both rows and columns.</li>
+<li>Multiple types of observational units are stored in the same table.</li>
+<li>A single observational unit is stored in multiple tables.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>RMarkdown example (archdata)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <pre><code class="r">data(Acheulean)
+# Compute percentages for each assemblage
+Acheulean.pct &lt;- prop.table(as.matrix(Acheulean[,3:14]), 1)*100
+round(Acheulean.pct, 2)
+plot(OST~HA, Acheulean.pct)
+boxplot(Acheulean.pct)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Save!</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Save your .Rmd file</li>
+<li>Save your RStudio project (.Rproj)</li>
+<li>Save workspace image to ~/nextCloud/Teaching/Open science/test_rr/.RData?
+
+<ul>
+<li>SAVE!</li>
+<li>An hidden .RData file is saved in the project directory</li>
+</ul></li>
+<li>An hidden .Rhisory is also saved in the project directory</li>
+</ul>
+
+<!-- References & Further resources -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>References &amp; further resources</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li><a href="https://github.com/benmarwick/ctv-archaeology">CRAN Task View: Archaeological Science</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Recap week 1'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Recap week 1'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='swirl modules'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='swirl modules (week 1)'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='swirl modules (week 1)'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Assignments (week 2)'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Research data/project management (w/ RStudio)'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='NA'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='The scientific process is naturally incremental'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Create a self-contained R project (w/ RStudio)'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Organization of a data analysis in a project directory'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Don&#39;t do that!'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Pros'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Pros'>
+         15
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='archdata'>
+         16
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Load data (f/ the archdata package)'>
+         17
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Save and read data (f/ Dropbox)'>
+         18
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='The Acheulean dataset'>
+         19
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Tidy data'>
+         20
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Tidying messy datasets'>
+         21
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='RMarkdown example (archdata)'>
+         22
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Save!'>
+         23
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='References &amp; further resources'>
+         24
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Science</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Open Science">
+  <meta name="author" content="Dr. Domenico Giusti">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/github.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    
+  <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/UT_WBMW_Rot_RGB_01.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/UT_WBMW_Rot_RGB_01.png">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>Open Science</h1>
+    <h2>Basic principles and best practices</h2>
+    <p>Dr. Domenico Giusti<br/>Paläoanthropologie, Senckenberg Centre for Human Evolution and Palaeoenvironment</p>
+  </hgroup>
+  
+  <article></article>  
+      
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png'>
+    </a>
+  </footer>
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <article data-timings="">
+    <!-- Markdown emphasis workaround (https://github.com/ramnathv/slidify/issues/224) -->
+
+<style>
+em {
+  font-style: italic
+}
+</style>
+
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
+
+<!-- Slidify (https://github.com/ramnathv/slidify)
+## Install
+    library(devtools)
+    install_github('ramnathv/slidify')
+    install_github('ramnathv/slidifyLibraries')
+## Initialize - creates a slide directory, initializes it as a git repo and opens index.Rmd for users to edit
+    library(slidify)
+    author('OpenScience_2_lecture')
+## Author
+    Write your presentation in RMarkdown editing the index.Rmd file
+## Generate
+    slidify('index.Rmd')
+## Publish to GitHub
+    publish(user = USER, repo = REPO) -->
+
+<!-- Learning objectives (FOSTER):
+
+    Learn the characteristics of open software; understand the ethical, legal, economic, and research-impact arguments for and against open software, and further understand the quality requirements of open code.
+
+    Learn how to use existing open software and appropriately attribute (cite) it.
+
+    Learn how to use common tools and services for sharing research codes openly.
+
+    Be able to choose the appropriate license for their software, and understand the difference between permissive and non-permissive licenses. -->
+
+<h2>Course roadmap</h2>
+
+<p><img src='assets/img/os_taxonomy.png' width=1000px class='center'></img></p>
+
+<p><a href="https://doi.org/10.1145/2809563.2809571">Pontika et al. 2015</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>3. Open Research Software and Open Source</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Outline</h3>
+
+<ul>
+<li>Definitions</li>
+<li>Rationale</li>
+<li>Summary</li>
+<li>FAQ</li>
+<li>Food for thought</li>
+<li>Practical exercises</li>
+</ul>
+
+<!-- Definitions -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-3" style="background:;">
+  
+  <hgroup>
+    <h2>Definitions</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><q>Open research software, or open-source research software, refers to the use and development of software for analysis, simulation, visualization, etc. where the full source code is available [and] shared under a license that allows modification, derivation, and redistribution..</q></p>
+
+<ul>
+<li><a href="https://book.fosteropenscience.eu/">The Open Science Training Handbook</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <h3><a href="https://www.gnu.org/philosophy/free-sw.html">Free/Libre Software</a></h3>
+
+<ul>
+<li>Freedom (0) to <strong>run</strong> the program as you wish, for any purpose</li>
+<li>Freedom (1) to <strong>study</strong> how the program works, and <strong>change</strong> it so it does your computing as you wish. <em>Access</em> to the source code is a precondition for this.</li>
+<li>Freedom (2) to <strong>redistribute</strong> copies so you can help others.</li>
+<li>Freedom (3) to <strong>distribute</strong> copies of your modified versions to others. <em>Access</em> to the source code is a precondition for this.</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <h3><a href="https://opensource.org/osd">Open Source Software</a></h3>
+
+<ul>
+<li>1. Free Redistribution</li>
+<li>2. Source Code</li>
+<li>3. Derived Works</li>
+<li>4. Integrity of The Author&#39;s Source Code</li>
+<li>5. No Discrimination Against Persons or Groups</li>
+<li>6. No Discrimination Against Fields of Endeavor</li>
+<li>7. Distribution of License</li>
+<li>8. License Must Not Be Specific to a Product</li>
+<li>9. License Must Not Restrict Other Software</li>
+<li>10. License Must Be Technology-Neutral</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>FLOSS VS Proprietary software</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img style='margin-top: 10px' class='center' src='assets/img/Free vs_ Proprietary software.png' width=500px></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  
+  <hgroup>
+    <h2>FLOSS research software</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>&quot;It frees researchers from the black box that most mouse-driven programs are, and enables researchers to not only rerun the shared analysis, but to gain access to all parameter settings, empowering them to change these and so properly evaluate, extend and reuse the published results&quot;.</li>
+<li>&quot;As open source languages such as R (and Python) are free to use, and many trustworthy repositories are also free (such as Zenodo, Open Science Framework, Figshare, etc.), then even researchers with limited resources anywhere in the world can contribute equally to the research community by using and sharing code. Using and sharing open source code is thus an important action for reducing inequality in the archaeological research community.&quot;</li>
+</ul>
+
+<p><a href="http://doi.org/10.5334/jcaa.29">Schmidt &amp; Marwick 2020</a></p>
+
+<!-- Rationale -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-8" style="background:;">
+  
+  <hgroup>
+    <h2>Rationale</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>A tool-driven revolution?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p>Archaeology is living a tool-driven revolution, or at least a change, in search for a more transparent and reproducible model.</p>
+
+<p>Factors:</p>
+
+<ul>
+<li>a significant increase in the rate of data collection</li>
+<li>a significant increase in computing power</li>
+<li>a significant development of FLOSS software for data analysis and visualisation</li>
+<li>a shift towards quantitative and computational analyses</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <h3>Articles citing R in Ecology</h3>
+
+<p><img style='margin-top: 10px' class='center' src='assets/img/jcaa-3-1-29-g1.png' width=600px></img></p>
+
+<p>Percentage of articles per year citing R in top Ecology journals (<strong>5,800</strong> articles out of 42,659). Data from Web of Science. <a href="http://doi.org/10.5334/jcaa.29">Schmidt &amp; Marwick 2020</a></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <h3>Articles citing R in Archaeology</h3>
+
+<p><img style='margin-top: 10px' class='center' src='assets/img/jcaa-3-1-29-g2.png' width=500px></img></p>
+
+<p>Proportion of Archaeology articles per year citing R (a total of <strong>154</strong> out of 42,991 articles in our sample for 2008–2018). Sub-plot shows articles published in the <em>Journal of Archaeological Science</em> during 2008–2017.</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h3>Articles sharing R</h3>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img style='margin-top: 10px' class='center' src='assets/img/journal.caa-international.org.png' width=750px></img></p>
+
+<p>Articles in archaeology journals using R for reproducible research, and making code files openly available to accompany the published article (n = 85). <a href="http://doi.org/10.5334/jcaa.29">Schmidt &amp; Marwick 2020</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h3>Citation advantage</h3>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img style='margin-top: 10px' class='center' src='assets/img/journal.caa-international.png' width=750px></img></p>
+
+<p>Median citation rates per year for archaeology articles 2010–2017 that cite R (n = 216) and articles that do not cite R (n = 42,828). On average, articles citing R have higher numbers of citations (m = 10.1) than articles that do not (m = 6.5), t(158) = 3.38, p = 0.00092. <a href="http://doi.org/10.5334/jcaa.29">Schmidt &amp; Marwick 2020</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>T- / π-shaped research</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img style='margin-top: 10px' class='center' src='assets/img/figure-from-marwick-2017.jpg' width=800px></img></p>
+
+<p><a href="https://doi.org/10.1007/s10816-015-9272-9">Marwick 2017</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>T- ~ π-shaped research</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img style='margin-top: 10px' class='center' src='assets/img/illustration.jpg' width=600px></img></p>
+
+<ul>
+<li><a href="https://conversationsinhumanevolution.com/2020/05/22/conversations-with-professor-felix-riede/">Conversations in Human Evolution: Prof. F. Riede</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><img style='margin-top: 10px' class='center' src='assets/img/OpenSourceCollaboration.jpg' width=650px></img></p>
+
+<p>This image was created by Scriberia for <a href="https://the-turing-way.netlify.app/welcome.html">The Turing Way</a> community and is used under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY licence</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  
+  <hgroup>
+    <h2>The π-shaped research lifecycle</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img style='margin-top: 10px' class='center' src='assets/img/Sriberia_ContinuousIntegration.jpg' width=600px></img></p>
+
+<p>This image was created by Scriberia for <a href="https://the-turing-way.netlify.app/welcome.html">The Turing Way</a> community and is used under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY licence</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><q>An article about a computational result is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result</q> <a href="https://doi.org/10.1007/978-1-4612-2544-7_5">Buckheit &amp; Donoho 1995</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Best practices</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Make source code publicly accessible <strong>from day one</strong></li>
+<li>Make software easy to discover by providing software <strong>metadata</strong> via a popular community registry</li>
+<li>Accompain your code w/ a <strong>license</strong>
+
+<ul>
+<li><a href="https://choosealicense.com/">Choosealicense.com</a></li>
+<li>Release under the <a href="https://choosealicense.com/licenses/mit/">MIT license</a> to enable maximum reuse</li>
+<li>How to apply a license? Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file.</li>
+</ul></li>
+<li>Appropriately cite software used
+
+<ul>
+<li>(e.g.) &quot;R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical
+Computing, Vienna, Austria. URL <a href="https://www.R-project.org/.">https://www.R-project.org/.</a>&quot;</li>
+<li>citation(&quot;pkgname&quot;)</li>
+</ul></li>
+<li>Define clear and transparent contribution, governance and communication processes</li>
+</ul>
+
+<p><a href="https://doi.org/10.12688/f1000research.11407.1">Jiménez et al. 2017</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Cons</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li><p>A certain familiarity with the computational tools is required to be able to use them not just on a technological basis, but creatively and in full knowledge of their restrictions and ambiguities</p></li>
+<li><p>As with data, preparing code to make it publicly available takes time to ensure that it is fit for others to read and use.</p></li>
+</ul>
+
+<p><a href="http://doi.org/10.5334/jcaa.29">Schmidt &amp; Marwick 2020</a></p>
+
+<!-- FAQ -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-20" style="background:;">
+  
+  <hgroup>
+    <h2>FAQ*</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><strong>I can’t share my [(R) code] — it’s too messy / it doesn’t have good documentation / I didn’t leave good comments!</strong></p>
+
+<p>Developers of research software around the world empathize with this feeling—people rarely feel like their code is &quot;ready&quot; to publicly share or that it is “finished”. However, as <a href="https://doi.org/10/cj8t6n">Barnes (2010)</a> put it, “if your code is good enough to do the job, then it is good enough to release — and releasing it will help your research and your field.” In other words, if you feel comfortable enough with your software to publish a study or report results, then the code is sufficiently developed to share with your colleagues. (In the other direction, if you don’t feel comfortable sharing the code, then perhaps it requires more development or testing before using in a publication). Plus, sharing your code allows others to improve and build upon it, leading to even greater impact and innovation (and citations for you!).</p>
+
+<p><strong>What if someone takes the code I have shared and uses it for nefarious purposes, or claims they wrote it?</strong></p>
+
+<p>Selecting an appropriate license for your software will help protect you from any uses of your software by others; for example, the common <a href="https://choosealicense.com/licenses/mit/">MIT License</a> includes both limitations of liability and states that no warranty is provided. If someone else tries to claim that they wrote the software you made available, then you can point to the timestamps on your repository or archived versions as proof of your prior work.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <article data-timings="">
+    <p><strong>If I share my code in an online repository, I will be deluged with requests for user support.</strong></p>
+
+<p>Although potential users may ask you for help, either via email or (e.g.) issues filed on the online repository, you are under no obligation to provide support if you prefer not to or cannot do so. An appropriate license even provides you with legal protection for this (e.g., the no-warranty clause of the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>).</p>
+
+<p>* <a href="https://book.fosteropenscience.eu/">The Open Science Training Handbook</a></p>
+
+<!-- Food for thought -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Food for thought</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><strong>The primary cost of enhancing reproducibility is the time required to learn to use the software tools.</strong></p>
+
+<p>&quot;Developing competence in using these tools for enhancing computational reproducibility is time-consuming, and raises the question of how much of this is practical for most archaeologists, and what the benefits and costs might be. Our view is that once the initial costs of learning the tools is paid off, implementing the principles [of RR] makes research and analysis easier, and has material professional benefits [such as citation advantages].&quot; <a href="https://doi.org/10.1007/s10816-015-9272-9">Marwick 2017</a></p>
+
+<ul>
+<li>Should all public Universities teach RR software tools in their Bachelor/Master/PhD programs?</li>
+</ul>
+
+<!-- References & Further resources -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>References &amp; further resources</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Reading list</h3>
+
+<ul>
+<li> Schmidt, S.C. and Marwick, B., 2020. Tool-Driven Revolutions in Archaeological Science. Journal of Computer Applications in Archaeology, 3(1), pp.18–32. DOI: <a href="http://doi.org/10.5334/jcaa.29">http://doi.org/10.5334/jcaa.29</a></li>
+</ul>
+
+<h3>References &amp; further resources</h3>
+
+<ul>
+<li><a href="https://conversationsinhumanevolution.com/2020/05/22/conversations-with-professor-felix-riede/">Conversations in Human Evolution: Prof. F. Riede</a></li>
+<li><a href="https://doi.org/10/cj8t6n">Barnes 2010</a></li>
+<li><a href="https://doi.org/10.1007/978-1-4612-2544-7_5">Buckheit &amp; Donoho 1995</a></li>
+<li><a href="https://doi.org/10.12688/f1000research.11407.1">Jiménez et al. 2017</a></li>
+<li><a href="https://doi.org/10.1007/s10816-015-9272-9">Marwick 2017</a></li>
+<li><a href="https://choosealicense.com/">Choosealicense.com</a></li>
+<li><a href="https://ropensci.org/">rOpenSci</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>References &amp; further resources</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Open Software Journals</h3>
+
+<ul>
+<li><a href="https://openresearchsoftware.metajnl.com/">Journal of Open Research Software (JORS)</a></li>
+<li><a href="https://www.nature.com/nature/articles?type=toolbox">Nature Toolbox</a></li>
+<li><a href="https://journals.plos.org/plosone/s/materials-software-and-code-sharing">PLOS</a>
+
+<ul>
+<li>&quot;We expect that all researchers submitting to PLOS submissions in which software is the central part of the manuscript will make all relevant software available without restrictions upon publication of the work.&quot;</li>
+</ul></li>
+<li><a href="https://www.software.ac.uk/which-journals-should-i-publish-my-software">Hong&#39;s list</a></li>
+</ul>
+
+<!-- Practical exercises -->
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-26" style="background:;">
+  
+  <hgroup>
+    <h2>Practical exercises</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Practical exercises</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Outline</h3>
+
+<ul>
+<li>Git &amp; GitHub workflow
+
+<ul>
+<li>Create a repository on GitHub &amp; link it to RStudio</li>
+<li>Write a README.md file</li>
+<li>Choose and apply a license for your repository/R code
+
+<ul>
+<li><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository">Licensing a GitHub repository</a></li>
+</ul></li>
+<li>commit &amp; push</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='3. Open Research Software and Open Source'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Definitions'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='FLOSS VS Proprietary software'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='FLOSS research software'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Rationale'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='A tool-driven revolution?'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='NA'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Articles sharing R'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Citation advantage'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='T- / π-shaped research'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='T- ~ π-shaped research'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='NA'>
+         15
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='The π-shaped research lifecycle'>
+         16
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='NA'>
+         17
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Best practices'>
+         18
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Cons'>
+         19
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='FAQ*'>
+         20
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='NA'>
+         21
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='NA'>
+         22
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Food for thought'>
+         23
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='References &amp; further resources'>
+         24
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='References &amp; further resources'>
+         25
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Practical exercises'>
+         26
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Practical exercises'>
+         27
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+
+  
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
